@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- External Icons -->
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/5b394bdfbb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Capstrack 1.1</title>
+  </head>
+  <body>
+    <section id="content">
+      <main>
+        <div class="container">
+          <!-- ANNOUNCEMENT -->
+          <ul class="box-info">
+            <li>
+              <i class="fa-solid fa-bullhorn"></i>
+              <span class="head-title">Announcement</span>
+              <p>
+                Due to unforeseen circumstances, the Capstone Proposal Defense
+                originally scheduled for April 21 has been rescheduled. Please
+                note that the new date for the defense will be April 26,
+                providing everyone with ample time to prepare and ensure a
+                successful presentation.<br /><br />
+                We understand the importance of this event in your academic
+                journey, and we want to ensure that you have the best
+                opportunity to showcase your hard work and dedication. Please
+                mark your calendars accordingly and make any necessary
+                adjustments to your schedules.
+              </p>
+              <button type="button" class="create">Create</button>
+            </li>
+          </ul>
+          <!-- ANNOUNCEMENT -->
+
+          <!-- CHART -->
+          <ul class="box-info-chart">
+            <li>
+              <div class="chart">
+                <span class="head-title">Reports</span><br />
+                <span class="sub-title">From 01-20 Mar, 2024</span><br />
+                <button type="button" class="create">View Reports</button>
+                <canvas id="pieChart" width="300" height="300"></canvas>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- CHART -->
+
+        <!-- SEARCH -->
+        <form action="">
+          <div class="search-filter-container">
+            <div class="search">
+              <i class="bx bx-search-alt-2"></i>
+              <input
+                class="search-input"
+                type="search"
+                placeholder="Search..."
+              />
+            </div>
+            <button type="button" class="filter">
+              <i class="bx bx-filter-alt"></i> Filter
+            </button>
+          </div>
+        </form>
+        <!-- SEARCH -->
+
+        <div class="table-data">
+          <div class="panel">     
+            <table>
+              <thead>
+                <tr>
+                  <th>Recently Viewed</th>
+                  <th>Date Opened</th>
+                  <th>Document Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="project1" name="project1" value="Bike">
+                    <label for="vehicle1"> Panel Invitation letter</label
+                  </td>
+                  <td>Mon 9, Mar, 10:49 AM</td>
+                  <td><span class="status approved"> <i class="fa-solid fa-circle"></i> Invitation Letter</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="project2" name="project2" value="Bike">
+                    <label for="vehicle1">Health and Wellness App System</label
+                  </td>
+                  <td>Mon 8, Mar, 10:49 AM</td>
+                  <td><span class="status approved"> <i class="fa-solid fa-circle"></i> Invitation Letter</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="project3" name="project3" value="Bike">
+                    <label for="vehicle1">Voting Management System</label
+                  </td>
+                  <td>Mon 7, Mar, 10:49 AM</td>
+                  <td><span class="status improvement"> <i class="fa-solid fa-circle"></i> Capstone Paper</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="todo">
+            <div class="head">
+              <h3>Updates</h3>
+            </div>
+            <ul class="updates"> 
+              <li>
+                <p>lorem ipsum</p>
+              </li>
+              <li>
+                <p>lorem ipsum</p>
+              </li>
+              <li>
+                <p>lorem ipsum</p>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- CONTENT -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="css/script.js"></script>
+    <script src="css/chart.js"></script>
+  </body>
+</html>
